@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml" fx:controller="com.comphel.shobuippon.gui.ShobuIpponCompetitorSetupController">
+  <children>
+    <VBox prefHeight="400.0" prefWidth="600.0">
+      <children>
+        <Label alignment="TOP_CENTER" contentDisplay="CENTER" prefWidth="600.0" text="Shobu-Ippon">
+          <font>
+            <Font name="System Bold" size="55.0" />
+          </font>
+        </Label>
+        <HBox prefHeight="282.0" prefWidth="600.0">
+          <children>
+            <VBox id="bgAka" prefHeight="276.0" prefWidth="300.0">
+              <children>
+                <Label alignment="CENTER" contentDisplay="CENTER" prefWidth="300.0" text="Aka">
+                  <font>
+                    <Font name="System Bold" size="35.0" fx:id="x3" />
+                  </font>
+                  <VBox.margin>
+                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" fx:id="x1" />
+                  </VBox.margin>
+                </Label>
+                <Label text="Vorname:" VBox.margin="$x1">
+                  <font>
+                    <Font size="25.0" fx:id="x2" />
+                  </font>
+                </Label>
+                <TextField id="tfVorname" fx:id="akaVorname" alignment="TOP_LEFT" prefHeight="35.0" prefWidth="200.0" VBox.margin="$x1" />
+                <Label font="$x2" text="Nachname:" VBox.margin="$x1" />
+                <TextField fx:id="akaNachname" alignment="TOP_LEFT" prefHeight="35.0" prefWidth="200.0" VBox.margin="$x1" />
+              </children>
+            </VBox>
+            <VBox id="bgShiro" prefHeight="276.0" prefWidth="300.0">
+              <children>
+                <Label alignment="CENTER" contentDisplay="CENTER" font="$x3" prefWidth="300.0" text="Shiro">
+                  <VBox.margin>
+                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" fx:id="x1" />
+                  </VBox.margin>
+                </Label>
+                <Label font="$x2" text="Vorname:">
+                  <VBox.margin>
+                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" fx:id="x1" />
+                  </VBox.margin>
+                </Label>
+                <TextField id="tfVorname" fx:id="shiroVorname" alignment="TOP_LEFT" prefHeight="35.0" prefWidth="200.0">
+                  <VBox.margin>
+                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" fx:id="x1" />
+                  </VBox.margin>
+                </TextField>
+                <Label font="$x2" text="Nachname:">
+                  <VBox.margin>
+                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" fx:id="x1" />
+                  </VBox.margin>
+                </Label>
+                <TextField id="akaNachname" fx:id="shiroNachname" alignment="TOP_LEFT" prefHeight="35.0" prefWidth="200.0">
+                  <VBox.margin>
+                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" fx:id="x1" />
+                  </VBox.margin>
+                </TextField>
+              </children>
+            </VBox>
+          </children>
+        </HBox>
+        <HBox prefHeight="57.0" prefWidth="600.0">
+          <children>
+            <CheckBox id="normalButton" fx:id="isFinale" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="49.9998779296875" prefWidth="160.0" text="Finale">
+              <font>
+                <Font name="System Bold" size="30.0" fx:id="x4" />
+              </font>
+              <HBox.margin>
+                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" fx:id="x1" />
+              </HBox.margin>
+            </CheckBox>
+            <Button id="normalButton" fx:id="start" font="$x4" mnemonicParsing="false" onAction="#startMatch" prefHeight="50.000099999997474" prefWidth="438.0" text="Start">
+              <HBox.margin>
+                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" fx:id="x1" />
+              </HBox.margin>
+            </Button>
+          </children>
+        </HBox>
+      </children>
+    </VBox>
+  </children>
+</AnchorPane>

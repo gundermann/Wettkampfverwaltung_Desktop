@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="300.0" xmlns:fx="http://javafx.com/fxml" fx:controller="com.comphel.shobuippon.gui.ShobuIpponFinishingViewController">
+  <children>
+    <VBox prefHeight="200.0" prefWidth="300.0">
+      <children>
+        <Label fx:id="winner" alignment="CENTER" contentDisplay="CENTER" prefWidth="300.0">
+          <font>
+            <Font name="System Bold" size="45.0" fx:id="x1" />
+          </font>
+        </Label>
+        <Label alignment="CENTER" contentDisplay="CENTER" font="$x1" prefWidth="300.0" text="No Kachi" />
+        <HBox prefHeight="100.0" prefWidth="200.0">
+          <children>
+            <Button id="normalButton" fx:id="nextMatch" mnemonicParsing="false" onAction="#newMatch" prefHeight="70.0" prefWidth="140.0" text="Neu">
+              <font>
+                <Font size="20.0" fx:id="x2" />
+              </font>
+              <HBox.margin>
+                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" fx:id="x3" />
+              </HBox.margin>
+            </Button>
+            <Button id="normalButton" font="$x2" mnemonicParsing="false" onAction="#close" prefHeight="75.0" prefWidth="140.0" text="Ende" HBox.margin="$x3" />
+          </children>
+        </HBox>
+      </children>
+    </VBox>
+  </children>
+</AnchorPane>

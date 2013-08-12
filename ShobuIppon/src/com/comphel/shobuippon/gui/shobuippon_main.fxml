@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1024.0" xmlns:fx="http://javafx.com/fxml" fx:controller="com.comphel.shobuippon.gui.ShobuIpponMainController">
+  <children>
+    <VBox prefHeight="800.0" prefWidth="1024.0">
+      <children>
+        <Label alignment="TOP_CENTER" contentDisplay="CENTER" prefWidth="1024.0" text="Shobu-Ippon">
+          <font>
+            <Font name="System Bold" size="55.0" fx:id="x1" />
+          </font>
+        </Label>
+        <Label fx:id="time" alignment="CENTER" contentDisplay="CENTER" font="$x1" prefWidth="1024.0" text="00:00" />
+        <Button id="normalButton" fx:id="btStartStop" font="$x1" mnemonicParsing="false" onAction="#startStop" prefWidth="1024.0" text="Start">
+          <VBox.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" fx:id="x3" />
+          </VBox.margin>
+        </Button>
+        <HBox prefHeight="555.0" prefWidth="1024.0">
+          <children>
+            <VBox prefHeight="555.0" prefWidth="512.0">
+              <children>
+                <Label fx:id="lbAka" alignment="TOP_CENTER" contentDisplay="CENTER" prefWidth="512.0" text="Aka">
+                  <font>
+                    <Font size="55.0" fx:id="x4" />
+                  </font>
+                </Label>
+                <HBox prefHeight="481.0" prefWidth="512.0">
+                  <children>
+                    <VBox prefHeight="458.0" prefWidth="256.0">
+                      <children>
+                        <Button id="akaButton" fx:id="btAkaJogai" mnemonicParsing="false" onAction="#akaJogai" prefHeight="150.0" prefWidth="236.0" text="Jogai: 0">
+                          <font>
+                            <Font name="System Bold" size="35.0" fx:id="x2" />
+                          </font>
+                          <VBox.margin>
+                            <Insets bottom="2.0" />
+                          </VBox.margin>
+                        </Button>
+                        <Button id="akaButton" fx:id="btAkaAtenai" font="$x2" mnemonicParsing="false" onAction="#akaAtenai" prefHeight="150.0" prefWidth="236.0" text="Atenai: 0">
+                          <VBox.margin>
+                            <Insets bottom="2.0" top="2.0" />
+                          </VBox.margin>
+                        </Button>
+                        <Button id="akaButton" fx:id="btAkaMubobi" font="$x2" mnemonicParsing="false" onAction="#akaMubobi" prefHeight="150.0" prefWidth="236.0" text="Mubobi: 0">
+                          <VBox.margin>
+                            <Insets top="2.0" />
+                          </VBox.margin>
+                        </Button>
+                      </children>
+                      <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" fx:id="x3" />
+                      </HBox.margin>
+                    </VBox>
+                    <VBox prefHeight="467.0" prefWidth="256.0" HBox.margin="$x3">
+                      <children>
+                        <Button id="akaButton" fx:id="btAkaWazari" font="$x1" mnemonicParsing="false" onAction="#akaWazari" prefHeight="461.0" prefWidth="236.0" text="0" />
+                      </children>
+                    </VBox>
+                  </children>
+                </HBox>
+              </children>
+            </VBox>
+            <VBox prefHeight="555.0" prefWidth="512.0">
+              <children>
+                <Label id="lbAka" fx:id="lbShiro" alignment="TOP_CENTER" contentDisplay="CENTER" font="$x4" prefWidth="512.0" text="Shiro" />
+                <HBox prefHeight="481.0" prefWidth="512.0">
+                  <children>
+                    <VBox prefHeight="467.0" prefWidth="256.0">
+                      <children>
+                        <Button id="shiroButton" fx:id="btShiroWazari" font="$x1" mnemonicParsing="false" onAction="#shiroWazari" prefHeight="461.0" prefWidth="236.0" text="0" />
+                      </children>
+                      <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" fx:id="x3" />
+                      </HBox.margin>
+                    </VBox>
+                    <VBox prefHeight="458.0" prefWidth="256.0">
+                      <children>
+                        <Button id="shiroButton" fx:id="btShiroJogai" font="$x2" mnemonicParsing="false" onAction="#shiroJogai" prefHeight="150.0" prefWidth="236.0" text="Jogai: 0">
+                          <VBox.margin>
+                            <Insets bottom="2.0" />
+                          </VBox.margin>
+                        </Button>
+                        <Button id="shiroButton" fx:id="btShiroAtenai" font="$x2" mnemonicParsing="false" onAction="#shiroAtenai" prefHeight="150.0" prefWidth="236.0" text="Atenai: 0">
+                          <VBox.margin>
+                            <Insets bottom="2.0" top="2.0" />
+                          </VBox.margin>
+                        </Button>
+                        <Button id="shiroButton" fx:id="btShiroMubobi" font="$x2" mnemonicParsing="false" onAction="#shiroMubobi" prefHeight="150.0" prefWidth="236.0" text="Mubobi: 0">
+                          <VBox.margin>
+                            <Insets top="2.0" />
+                          </VBox.margin>
+                        </Button>
+                      </children>
+                      <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" fx:id="x3" />
+                      </HBox.margin>
+                    </VBox>
+                  </children>
+                </HBox>
+              </children>
+            </VBox>
+          </children>
+        </HBox>
+      </children>
+    </VBox>
+  </children>
+</AnchorPane>
